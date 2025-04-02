@@ -1,0 +1,11 @@
+# Venv files.
+venv/
+
+# Python compiled files.
+**/__pycache__/
+
+# IDE Files.
+.code-workspace
+.idea
+.vscode
+.vs
