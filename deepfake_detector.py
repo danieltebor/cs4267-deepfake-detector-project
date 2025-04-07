@@ -17,6 +17,7 @@ app = Flask(__name__)
 print('Loading model...')
 model = DeepfakeDetectorNet()
 model.load_state_dict(load_file('models/deepfake-detector-net.safetensors', device='cpu'))
+model.eval()
 transform = transforms.Compose([
     transforms.Resize((224, 224)),
     transforms.ToTensor(),
